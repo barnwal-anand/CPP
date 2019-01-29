@@ -55,4 +55,7 @@ str6.replace(2, 7, "ese are test");  // str6 = These are test examples
 // Reverse str[beign..end]
 reverse(str.begin(), str.end());
 
-cin.getline(str, 20); // to take multi word input 
+cin.getline(str, 20); // to take multi word input
+
+string str = "Anand";
+str += to_string(i); //append int (int i = 10)

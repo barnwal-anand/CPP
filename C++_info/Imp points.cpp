@@ -47,3 +47,15 @@ while(getline(check1, word, ' '))
 or
 while (check1 >> word)
     tokens.push_back(word);
+
+
+BitSet:
+-------
+A bitset is an array of bool but each boolean value is not stored separately
+instead bitset optimizes the space such that each bool takes 1 bit space only.
+int M = 32;
+bitset<M> bset(20); //initialized with bits of 20 (here M is length)
+cout << bset; // 00000000000000000000000000010100
+
+bitset<8> set2; // 000000000
+set8[1] = 1;
