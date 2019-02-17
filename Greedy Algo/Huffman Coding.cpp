@@ -24,16 +24,16 @@ class Comparator {
 	}
 };
 
-void PrintCodes(MinHeapNode *minHeap, string res)
+void PrintCodes(MinHeapNode *minHeapRoot, string res)
 {
-	if(minHeap == NULL)
+	if(minHeapRoot == NULL)
 		return;
-	if(minHeap->data != '$')
+	if(minHeapRoot->data != '$')
 	{
-		cout << minHeap->data << " " << res << endl;
+		cout << minHeapRoot->data << " " << res << endl;
 	}
-	PrintCodes(minHeap->left, res + "0");
-	PrintCodes(minHeap->right, res + "1");
+	PrintCodes(minHeapRoot->left, res + "0");
+	PrintCodes(minHeapRoot->right, res + "1");
 }
 
 void HuffmanCodes(char arr[], int freq[], int size)
